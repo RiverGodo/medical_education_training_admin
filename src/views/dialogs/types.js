@@ -1,0 +1,10 @@
+export const ADD_COURSE = 'add-course';
+export const ADD_OFFLINE_SEMESTER = 'add-offline-semester';
+export const ADD_QUESTION = 'add-question';
+export const VIDEO_MANAGE = 'video-manage';
+export const SEND_OFFLINE_COURSE = 'send-offline-course';
+export const ADD_DOWNLOAD_DATA = 'add-download-data';
+export const ADD_PRODUCTION = 'add-production';
+export const ADD_HOUNER = 'add-houner';
+export const SEND_HOUNER = 'send-houner';
+export const READ_OVER = 'read-over';

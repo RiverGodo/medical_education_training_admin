@@ -1,0 +1,31 @@
+@mixin base-style() {
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+}
+input[placeholder]::-webkit-input-placeholder,
+textarea[placeholder]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    @include base-style;
+}
+
+input[placeholder]::-moz-placeholder,
+textarea[placeholder]::-moz-placeholder {
+    /* Firefox 19+ */
+    @include base-style;
+}
+
+input[placeholder]:-ms-input-placeholder,
+textarea[placeholder]:-ms-input-placeholder {
+    /* IE 10+ */
+    @include base-style;
+}
+
+input[placeholder]:-moz-placeholder,
+textarea[placeholder]:-moz-placeholder {
+    /* Firefox 18- */
+    @include base-style;
+}
+.el-form-item {
+    margin-bottom: 15px;
+}

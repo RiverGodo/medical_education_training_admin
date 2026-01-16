@@ -1,0 +1,38 @@
+@selectors-size: 22, 14, 18, 14, 14, 16;
+@selectors-color: #4098FF, #4098FF, #333333, #333333, #8C9095, #474C63;
+each(range(6), {
+.font-regular@{value} {
+  font-family: PingFangSC-Regular;
+  color: extract(@selectors-color, @value);
+  font-size: extract(@selectors-size, @value) * 1px;
+}
+});
+
+
+@selectors-size2: 18, 16, 13, 14, 15;
+each(range(5), {
+.grey-regular@{value} {
+  font-family: PingFangSC-Regular;
+  color: #474C63;
+  font-size: extract(@selectors-size2, @value) * 1px;
+}
+});
+
+@selectors-size3: 18, 22, 10, 16, 14, 13, 20;
+each(range(7), {
+.grey-medium@{value} {
+  font-family: PingFangSC-Medium;
+  color: #474C63;
+  font-size: extract(@selectors-size3, @value) * 1px;
+}
+});
+
+
+@selectors-size4: 18, 10;
+each(range(2), {
+.grey-regulars@{value} {
+  font-family: PingFangSC-Regular;
+  color:#8489A1;
+  font-size: extract(@selectors-size4, @value) * 1px;
+}
+});

@@ -1,0 +1,21 @@
+{
+  "name": "medical_education_training_admin",
+  "version": "1.0.0",
+  "description": "九划医教后台管理",
+  "author": "wsq <924384288@qq.com>",
+  "private": true,
+  "scripts": {
+    "server": "node server.js"
+  },
+  "config": {
+    "port": "8102",
+    "env": "development"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

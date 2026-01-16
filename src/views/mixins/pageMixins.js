@@ -1,0 +1,33 @@
+export default {
+  data() {
+    return {
+      current: 1,
+      total: null,
+      pageSize: 16,
+    }
+  },
+  methods: {
+    pageList(val) {
+      if(this.pageTotal){
+        this.current = val
+        this.initData();
+      }else{
+        this.current = val
+        this.getList()
+        if(this.setStudentListSelection) this.setStudentListSelection()
+      }
+    },
+    resetPage(){
+      this.current = 1
+    }
+  },
+  computed: {
+    pageDataCount() {
+      return {
+        current: this.current,
+        pageSize: this.pageSize,
+        isSerial: true
+      }
+    }
+  }
+}
